@@ -1,8 +1,17 @@
+import { registerRootComponent } from 'expo';
 import 'app/styles/global.css';
-import { Home } from "pages";
+import { ExpoRoot } from "expo-router";
+import { SafeAreaProvider } from "react-native-safe-area-context";
 
-export default function App() {
+
+const App = () => {
+  const ctx = require.context('routes');
+
   return (
-      <Home />
+    <SafeAreaProvider> 
+      <ExpoRoot context={ctx} />
+    </SafeAreaProvider>
   );
 }
+
+registerRootComponent(App);

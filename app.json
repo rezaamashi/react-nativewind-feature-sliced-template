@@ -2,6 +2,7 @@
   "expo": {
     "name": "MyNativeApp",
     "slug": "MyNativeApp",
+    "scheme": "mynativeapp",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
