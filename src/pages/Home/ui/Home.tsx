@@ -7,7 +7,7 @@ export function HomePage() {
   return (
     <View className="flex-1 bg-white items-center justify-center">
       <Text>Open up App.tsx to start working on your app!</Text>
-      <Link href={'/random-page'}>Go to 404</Link>
+      <Link href={'/random-page'} className='text-blue-500'>Go to 404</Link>
       <StatusBar style="auto" />
     </View>
   )
